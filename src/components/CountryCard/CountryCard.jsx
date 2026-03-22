@@ -6,7 +6,7 @@ function CountryCard(props) {
           <img
             className="w-full rounded-lg"
             src={props.flag}
-            alt={props.countryName}
+            alt={props.countryName || "N/A"}
           />
         </div>
         <div className="bg-primary p-2 rounded">
@@ -18,7 +18,7 @@ function CountryCard(props) {
         <div className="grid grid-cols-2 gap-5">
           <div className="items-center">
             <span className="text-sm font-bold">Capital: </span>
-            <p className="text-lg">{!props.capital ? "N/A" : props.capital}</p>
+            <p className="text-lg">{props.capital || "N/A"}</p>
           </div>
           <div className=" items-center">
             <span className="text-sm font-bold">Region: </span>

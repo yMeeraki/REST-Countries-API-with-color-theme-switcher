@@ -20,10 +20,10 @@ function App() {
   return (
     <>
       <Header />
-      <main className="bg-secondary/20 h-screen">
-        {/* <div className="p-10  gap-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <main className="bg-secondary/20 h-full">
+        <div className="p-10  gap-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {allCountries}
-        </div> */}
+        </div>
         <CountryDetailCard/>
       </main>
     </>

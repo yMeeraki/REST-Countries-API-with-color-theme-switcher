@@ -18,7 +18,7 @@ function SearchCountry() {
             />
           </div>
           <input
-            className="bg-primary text-accent hover:bg-accent hover:text-primary px-5 rounded-lg hover:cursor-pointer hover:scale-105"
+            className="bg-primary text-accent hover:bg-accent hover:text-primary px-5 rounded-lg hover:cursor-pointer hover:scale-105    transition  duration-300 ease-in-out"
             type="submit"
             value="Search"
           />

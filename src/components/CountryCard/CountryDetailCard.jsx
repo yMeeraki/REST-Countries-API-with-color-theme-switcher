@@ -13,7 +13,7 @@ function CountryDetailCard() {
   };
 
   return (
-    <section className="p-6 max-w-6xl mx-auto">
+    <section className="p-6 max-w-6xl mx-auto ">
       {/* Back Button */}
       <button className="flex items-center gap-2 px-4 py-2 mb-8 bg-primary text-accent rounded-lg  transition hover:bg-accent hover:text-primary hover:cursor-pointer">
         <CircleArrowLeft size={18} />
@@ -21,7 +21,7 @@ function CountryDetailCard() {
       </button>
 
       {/* Main Layout */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center bg-primary/30  backdrop-blur-md shadow-2xl p-10 rounded-2xl">
         {/* Flag */}
         <div>
           <img
@@ -33,8 +33,11 @@ function CountryDetailCard() {
 
         {/* Details */}
         <div className="flex flex-col gap-6">
-          <h2 className="text-4xl font-bold">{country.name}</h2>
-
+          <div className="bg-primary p-2 rounded">
+            <h2 className="text-4xl font-extrabold text-accent">
+              {country.name}
+            </h2>
+          </div>
           <div className="space-y-2 text-sm md:text-base">
             <p>
               <strong>Capital:</strong> {country.capital}
@@ -62,7 +65,7 @@ function CountryDetailCard() {
               {country.borders.map((border, index) => (
                 <span
                   key={index}
-                  className="px-3 py-1 bg-accent text-primary hover:bg-primary hover:text-accent hover:cursor-pointer rounded-md text-sm "
+                  className="px-3 py-1 bg-accent text-primary hover:bg-primary hover:text-accent hover:cursor-pointer hover:scale-105 transition delay-150 duration-300 ease-in-out rounded-md text-sm "
                 >
                   {border}
                 </span>
