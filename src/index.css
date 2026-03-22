@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import "tailwindcss";
+
 /* 
 src/
  ├── components/
@@ -17,11 +20,16 @@ src/
  ├── App.jsx
  └── main.jsx
 */
-:root {
+
+@theme {
   --color-primary: #212529;
   --color-secondary: #4d5256;
   --color-accent: #e69c24;
 
+  --color-card: #fff;
+}
+
+:root {
   background: #f8f9fa;
   font-family: "Nunito Sans", sans-serif;
 }
