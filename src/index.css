@@ -24,11 +24,8 @@ src/
   --color-primary: #212529;
   --color-secondary: #4d5256;
   --color-accent: #e69c24;
-
-  --color-card: #fff;
 }
 
 :root {
-  background: #f8f9fa;
   font-family: "Nunito Sans", sans-serif;
 }
