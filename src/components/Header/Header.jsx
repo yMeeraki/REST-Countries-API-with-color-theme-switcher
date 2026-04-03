@@ -1,6 +1,4 @@
 import { Sun, Moon } from "lucide-react";
-import SearchCountry from "../Search-And-Filter/SearchCountry.jsx";
-import Filter from "../Search-And-Filter/Filter.jsx";
 import React from "react";
 
 function Header() {
@@ -31,10 +29,6 @@ function Header() {
               )}
             </span>
           </button>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 p-5 gap-5">
-          <SearchCountry />
-          <Filter />
         </div>
       </header>
     </>

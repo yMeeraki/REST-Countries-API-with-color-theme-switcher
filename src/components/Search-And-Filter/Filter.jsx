@@ -19,7 +19,7 @@ function Filter() {
           name="filter-by-region"
           id="filter-by-region"
         >
-          <option value="">---</option>
+          <option value="">All Regions</option>
           {regionUnique.map((region) => {
             return (
               <option key={region} value={region}>
